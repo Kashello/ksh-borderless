@@ -1,0 +1,84 @@
+KSH Borderless 1.4
+==================
+
+Program działa w tle (ikonka przy zegarze). Ustawia gry w oknie bez ramki
+i paska tytułu, w wybranym rozmiarze (np. 2560x1440 na środku monitora 3440x1440),
+nad paskiem zadań Windows, i trzyma myszkę w oknie gry.
+
+URUCHOMIENIE
+1. Uruchom kshborderless.exe (Windows może pokazać "Windows chronił komputer",
+   bo plik nie jest podpisany: "Więcej informacji" -> "Uruchom mimo to").
+2. Przy pierwszym uruchomieniu od razu otworzy się panel ustawień.
+
+IKONKA PRZY ZEGARZE
+  Lewy klik  - panel ustawień
+  Prawy klik - menu: Ustawienia, blokada myszy, wstrzymanie automatu,
+               przywrócenie okien, autostart z Windows, dziennik, pomoc, zamknij
+               ("Zamknij" zamyka też otwarty panel ustawień)
+  Ponowne uruchomienie kshborderless.exe też otwiera panel.
+
+PANEL USTAWIEŃ
+  Wygląd w stylu kashello.pl, emblemat kota w nagłówku, na dole linki:
+  Twitch, YouTube, Discord, kashello.pl.
+
+  Profile gier:
+   - obok nazwy gry jest jej ikona - wyciągana automatycznie z pliku .exe,
+     gdy gra jest uruchomiona (zapisywana w folderze "ikony"); bez ikony pole jest puste
+   - "+ Z otwartych okien" - lista uruchomionych programów, klikasz grę i "Dodaj"
+   - "+ Pusty profil"      - wpisujesz nazwę pliku .exe ręcznie
+  W profilu:
+   - Monitor     - "ten, na którym jest gra" albo konkretny monitor
+   - Rozmiar taki jak w grze - program tylko zdejmuje ramkę i ustawia pozycję,
+                   a rozdzielczość wybierasz w samej grze (np. Diablo IV, które
+                   samo ogranicza rozmiar okna i inaczej zostawia czarne paski)
+   - Rozmiar     - wpisujesz ręcznie albo klikasz preset pod stream
+                   (liczony z wykrytej rozdzielczości monitora):
+                   16:9 cała wysokość, Twitch/Kick 1080p i 720p, Twitch 900p,
+                   YouTube 1440p i 4K, pion 9:16 TikTok/Shorts, natywna
+   - Pozycja     - środek / lewo / prawo / własna X,Y
+                   albo przeciągasz okno myszką na podglądzie monitora
+   - Nad paskiem zadań, trzymanie myszki w oknie
+  Domyślne ustawienia - dla skrótu Ctrl+Alt+F9 i nowych profili
+  Skróty klawiszowe   - "Zmień" i naciskasz nowy skrót
+  Program             - uruchamianie jako administrator, dymki, autostart, pliki
+
+  "Zapisz i zastosuj" (albo Ctrl+S) zapisuje ustawienia i od razu ustawia
+  otwarte gry. Przed każdym zapisem robiona jest kopia kshborderless.ini.bakup.
+
+STARCRAFT 2 / INNA GRA
+1. W ustawieniach gry wybierz tryb OKNO (Windowed), NIE "pełny ekran"
+   i NIE "okno pełnoekranowe". Rozdzielczość taka jak w profilu (np. 2560x1440).
+2. Profil SC2_x64.exe jest już na liście. Inne gry dodajesz w panelu.
+3. Od tej pory przy każdym uruchomieniu gra ustawi się sama.
+
+SKRÓTY (domyślne, działają na aktywne okno)
+  Ctrl+Alt+F9 - ustaw okno bez ramki / przywróć je
+  Ctrl+Alt+M  - włącz / wyłącz blokadę myszy
+  Ctrl+Alt+P  - dodaj aktywną grę do profili
+  Alt+Tab zwalnia myszkę, powrót do gry ją znowu blokuje.
+
+PLIKI OBOK PROGRAMU
+  kshborderless.ini         - ustawienia (można też edytować w Notatniku)
+  kshborderless.ini.bakup   - kopia sprzed ostatniego zapisu
+  kshborderless.log         - dziennik zdarzeń
+  ikony\                    - ikony gier wyciągnięte z ich plików .exe
+
+GRY Z ANTY-CHEATEM (np. AION 2)
+  Takie gry często działają jako administrator i zwykły program nie może
+  zmieniać ich okien. W panelu -> Program zaznacz "Uruchamiaj jako administrator",
+  kliknij "Zapisz i zastosuj", a potem "Uruchom ponownie jako administrator"
+  (na górze panelu) i potwierdź okienko Windows.
+  - Przy ręcznym uruchomieniu Windows zapyta raz (okienko UAC).
+  - Autostart działa wtedy przez Harmonogram zadań, bez okienka przy starcie Windows.
+  - Niektóre anty-cheaty mogą mimo to blokować zmiany okna gry.
+
+GDY COŚ NIE DZIAŁA
+  - Dymek "gra działa jako administrator": patrz punkt wyżej.
+  - Szczegóły: kshborderless.log (menu -> Pokaż dziennik zdarzeń).
+  - Po zamknięciu programu gry zostają bez ramki, zdejmowana jest tylko
+    blokada myszy i "zawsze na wierzchu".
+
+KOD ŹRÓDŁOWY (Rust) - folder zrodla
+  Kompilacja na Windows: zainstaluj Rust (rustup.rs), potem w folderze zrodla:
+      cargo build --release
+  Gotowy plik: zrodla\target\release\kshborderless.exe
