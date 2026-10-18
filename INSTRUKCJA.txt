@@ -1,4 +1,4 @@
-KSH Borderless 1.4.2 – instrukcja
+KSH Borderless 1.4.3 – instrukcja
 =================================
 
 KSH Borderless ustawia gry w oknie bez ramki i paska tytułu, w wybranym
@@ -15,8 +15,9 @@ PIERWSZE URUCHOMIENIE
 
 Ikonka przy zegarze:
   • lewy klik  – panel ustawień
-  • prawy klik – menu: blokada myszy, wstrzymanie, przywrócenie okien,
-                 uruchamianie z Windows, pomoc, Zamknij
+  • prawy klik – menu: włączanie / wyłączanie profili gier, blokada myszy,
+                 wstrzymanie, przywrócenie okien, uruchamianie z Windows,
+                 pomoc, Zamknij
 
 
 DODANIE GRY
@@ -45,6 +46,20 @@ USTAWIENIA GRY
 • Nad paskiem zadań Windows – gra przykrywa pasek, gdy jest aktywna.
 • Trzymaj myszkę w oknie gry – Alt+Tab zwalnia myszkę,
               powrót do gry znowu ją blokuje.
+
+
+WŁĄCZANIE I WYŁĄCZANIE PROFILU
+------------------------------
+Każdy profil ma przełącznik włącz / wyłącz. Działa od razu – bez
+klikania „Zapisz i zastosuj”. Znajdziesz go:
+  • na liście gier w panelu (przy nazwie gry),
+  • na stronie profilu (prawy górny róg),
+  • w menu przy zegarze → „Profile gier (włącz / wyłącz)”.
+
+Wyłączony profil zostaje na liście, ale program przestaje pilnować
+tej gry: okno zostaje takie, jakie jest, myszka jest wolna, a gra
+nie jest już trzymana nad paskiem zadań. Po włączeniu gra od razu
+ustawi się z powrotem.
 
 
 SKRÓTY KLAWISZOWE
