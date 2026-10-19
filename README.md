@@ -10,9 +10,9 @@ Idealny do monitorów ultrawide i streamowania.
 
 ## Pobierz
 
-👉 **[Najnowsza wersja – zakładka Releases](../../releases/latest)** → plik `kshborderless.exe`
+👉 **[Najnowsza wersja – zakładka Releases](../../releases/latest)** → plik `KSH-Borderless-Setup.exe`
 
-Wymagania: Windows 10 / 11 (64-bit). Bez instalacji.
+Wymagania: Windows 10 / 11 (64-bit). Instalacja bez uprawnień administratora.
 
 ## Funkcje
 
@@ -22,10 +22,11 @@ Wymagania: Windows 10 / 11 (64-bit). Bez instalacji.
 - 📌 **Nad paskiem zadań**
 - 🎮 **Profile gier** – gra ustawia się sama przy każdym uruchomieniu
 - 🖥️ **Wiele monitorów**
+- 🔄 **Aktualizuje się sam** – nowa wersja jednym kliknięciem
 
 ## Jak zacząć
 
-1. Pobierz `kshborderless.exe` i uruchom go.
+1. Pobierz `KSH-Borderless-Setup.exe` i zainstaluj program.
 2. Jeśli Windows pokaże ostrzeżenie: **„Więcej informacji” → „Uruchom mimo to”**.
 3. Kliknij ikonkę przy zegarze i dodaj grę przyciskiem **„+ Z okien”** (gra musi być w trybie okna).
 

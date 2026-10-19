@@ -1,4 +1,4 @@
-KSH Borderless 1.4.3 – instrukcja
+KSH Borderless 1.5.0 – instrukcja
 =================================
 
 KSH Borderless ustawia gry w oknie bez ramki i paska tytułu, w wybranym
@@ -6,18 +6,23 @@ rozmiarze i miejscu na ekranie, nad paskiem zadań Windows, i pilnuje,
 żeby myszka nie uciekała z okna gry.
 
 
-PIERWSZE URUCHOMIENIE
----------------------
-1. Uruchom kshborderless.exe – instalacja nie jest potrzebna.
+INSTALACJA
+----------
+1. Pobierz KSH-Borderless-Setup.exe i uruchom go.
 2. Jeśli Windows pokaże „System Windows ochronił ten komputer”,
    kliknij „Więcej informacji” → „Uruchom mimo to”.
-3. Otworzy się panel ustawień, a przy zegarze pojawi się ikonka programu.
+3. Przejdź przez instalator. Możesz wybrać skrót na pulpicie
+   i uruchamianie razem z Windows.
+   Program instaluje się w Twoim folderze użytkownika – nie potrzebuje
+   uprawnień administratora.
+4. Na końcu zostaw zaznaczone „Uruchom KSH Borderless”.
+   Przy zegarze pojawi się ikonka programu.
 
 Ikonka przy zegarze:
   • lewy klik  – panel ustawień
   • prawy klik – menu: włączanie / wyłączanie profili gier, blokada myszy,
                  wstrzymanie, przywrócenie okien, uruchamianie z Windows,
-                 pomoc, Zamknij
+                 sprawdzanie aktualizacji, pomoc, Zamknij
 
 
 DODANIE GRY
@@ -84,8 +89,28 @@ z informacją.
 
 URUCHAMIANIE RAZEM Z WINDOWS
 ----------------------------
-Panel → „Program” → „Uruchamiaj razem z Windows”
+Możesz to zaznaczyć w instalatorze, a potem zmienić w panelu:
+„Program” → „Uruchamiaj razem z Windows”
 (albo prawy klik na ikonce przy zegarze).
+
+
+AKTUALIZACJE
+------------
+Program sam sprawdza, czy jest nowa wersja (przy starcie i raz na dobę).
+Gdy jest, zobaczysz dymek „Dostępna nowa wersja”. Kliknij go
+(albo prawy klik na ikonce → „Zaktualizuj do wersji…”, albo w panelu:
+„Program” → „Aktualizacje”). Program pobierze nową wersję, sprawdzi,
+czy plik nie jest uszkodzony, i uruchomi się ponownie.
+Twoje ustawienia i profile gier zostają.
+
+Ręcznie: prawy klik na ikonce → „Sprawdź aktualizacje”.
+
+
+ODINSTALOWANIE
+--------------
+Ustawienia Windows → Aplikacje → KSH Borderless → Odinstaluj
+(albo menu Start → KSH Borderless → Odinstaluj KSH Borderless).
+Instalator zapyta, czy usunąć też Twoje ustawienia i profile gier.
 
 
 GDY COŚ NIE DZIAŁA
@@ -100,6 +125,9 @@ GDY COŚ NIE DZIAŁA
 
 PLIKI PROGRAMU
 --------------
+Program jest w folderze:
+  %LOCALAPPDATA%\Programs\KSH Borderless
+(najszybciej: prawy klik na ikonce → „Otwórz folder programu”).
 Obok kshborderless.exe program zapisuje:
   kshborderless.ini  – Twoje ustawienia
   kshborderless.log  – dziennik zdarzeń
